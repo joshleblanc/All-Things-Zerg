@@ -1,0 +1,21 @@
+.ui.vertical.masthead.center.aligned.segment
+  .ui.text.container
+    %h1.ui.header All Things Zerg
+.ui.vertical.stripe.segment
+  .ui.one.column.grid.container
+    .row
+      .column
+        %h2 Openers
+        =render_partial :openers
+.ui.vertical.stripe.segment
+  .ui.three.column.grid.container
+    .row
+      .column
+        %h2 vs Zerg
+        =render_partial :zerg
+      .column
+        %h2 vs Protoss
+        =render_partial :protoss
+      .column
+        %h2 vs Terran
+        =render_partial :terran
