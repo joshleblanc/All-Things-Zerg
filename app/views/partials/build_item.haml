@@ -1,0 +1,11 @@
+.item
+  .content
+    .header
+      =@head
+    .meta
+      =@meta
+    .description
+      -@desc.each do |item|
+        %p=item
+    .extra
+      =@extra
