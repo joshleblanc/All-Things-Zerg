@@ -1,3 +1,7 @@
 hr {
   width: 33%;
 }
+
+body {
+  background: url("img/brushed/brushed.png")
+}
