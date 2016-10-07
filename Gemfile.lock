@@ -13,11 +13,9 @@ GEM
     tilt (2.0.5)
 
 PLATFORMS
+  ruby
   x86-mingw32
 
 DEPENDENCIES
   haml
   sinatra
-
-BUNDLED WITH
-   1.10.6
