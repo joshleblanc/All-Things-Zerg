@@ -6,19 +6,32 @@
     .row
       .column
         %h2 Openers
-        =render_partial :openers
+        .ui.three.column.grid.container
+          .row
+            .column
+              .ui.items
+                =render_opener :hatch_gas_pool
+            .column
+              .ui.items
+                =render_opener :three_hatch_before_pool
+            .column
+              .ui.items
+                =render_opener :pool_hatch_gas
 .ui.vertical.stripe.segment
   .ui.three.column.grid.container
     .row
       .column
         %h2 vs Zerg
-        =render_partial :zerg
+        .ui.items
+          =render_build :ling_bane_into_roach
       .column
         %h2 vs Protoss
-        =render_partial :protoss
+        .ui.items
+          =render_build :ravager_ling_bane
       .column
         %h2 vs Terran
-        =render_partial :terran
+        .ui.items
+          =render_build :ultra_rush
 .ui.vertical.stripe.segment
   .ui.one.column.grid.container
     .row
@@ -38,10 +51,17 @@
     .row
       .column
         %h2 vs Zerg
-        =render_partial :zerg_scouting
+        .ui.items
+          =render_zerg_build :one_base_ling_bane
+          =render_zerg_build :early_pool_expand
       .column
         %h2 vs Protoss
-        =render_partial :protoss_scouting
+        .ui.items
+          =render_protoss_build :glaive_adept
+          =render_protoss_build :oracle
       .column
         %h2 vs Terran 
-        =render_partial :terran_scouting
+        .ui.items
+          =render_terran_build "2_1_1"
+          =render_terran_build :widowmine_drop
+          =render_terran_build :hellion_banshee

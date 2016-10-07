@@ -1,0 +1,23 @@
+hr {
+  width: 33%;
+}
+
+body {
+  background-color:  #fdf6e3;
+}
+
+.stripe:nth-child(even) {
+  background-color: #eee8d5 !important;
+}
+
+h2, .header {
+  color: #657b83 !important;
+}
+
+.meta, .extra {
+  color: #93a1a1 !important;
+}
+
+p, li {
+  color: #586e75;
+}
