@@ -4,8 +4,9 @@ require 'haml'
 
 module Site
   class App < Sinatra::Application
-    Dir['./app/helpers/*.rb'].each { |file| require file }
-    Dir['./app/controllers/*.rb'].each { |file| require file }
+    Dir['./App/Helpers/*.rb'].each { |file| require file }
+    Dir['./App/Controllers/*.rb'].each { |file| require file }
+
     use Routes::Home
   end
 end
