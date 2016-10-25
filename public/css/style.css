@@ -3,21 +3,17 @@ hr {
 }
 
 body {
-  background-color:  #fdf6e3;
-}
-
-.stripe:nth-child(even) {
-  background-color: #eee8d5 !important;
+  background-color:  #232021;
 }
 
 h2, .header {
-  color: #657b83 !important;
+  color: #A46927 !important;
 }
 
 .meta, .extra {
-  color: #93a1a1 !important;
+  color: #79A3A7 !important;
 }
 
 p, li {
-  color: #586e75;
+  color: #DCDEDE;
 }
