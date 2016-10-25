@@ -18,4 +18,8 @@ PLATFORMS
 
 DEPENDENCIES
   haml
+  rack (< 2.0)
   sinatra
+
+BUNDLED WITH
+   1.13.2
