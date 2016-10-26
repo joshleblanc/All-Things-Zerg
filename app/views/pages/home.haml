@@ -9,14 +9,17 @@
         .ui.three.column.grid.container
           .row
             .column
+              %h2 vs Zerg
               .ui.items
-                =render_opener :hatch_gas_pool
+                =render_partial "openers/zerg/hatch_gas_pool"
             .column
+              %h2 vs Protoss
               .ui.items
-                =render_opener :three_hatch_before_pool
+                =render_partial "openers/protoss/hatch_gas_pool"
             .column
+              %h2 vs Terran
               .ui.items
-                =render_opener :pool_hatch_gas
+                =render_partial "openers/terran/hatch_gas_pool"
 .ui.vertical.stripe.segment
   .ui.three.column.grid.container
     .row
