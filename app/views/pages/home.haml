@@ -1,6 +1,7 @@
 .ui.vertical.masthead.center.aligned.segment
   .ui.text.container
     %h1.ui.header All Things Zerg
+=render_partial :general_tips
 .ui.vertical.stripe.segment
   .ui.one.column.grid.container
     .row
@@ -21,51 +22,45 @@
               .ui.items
                 =render_partial "openers/terran/hatch_gas_pool"
 .ui.vertical.stripe.segment
-  .ui.three.column.grid.container
+  .ui.one.column.grid.container
     .row
       .column
-        %h2 vs Zerg
-        .ui.items
-          =render_build :ling_bane_into_roach
-      .column
-        %h2 vs Protoss
-        .ui.items
-          =render_build :ravager_ling_bane
-      .column
-        %h2 vs Terran
-        .ui.items
-          =render_build :ultra_rush
+        %h2 Styles
+        .ui.three.column.grid.container
+          .row
+            .column
+              %h2 vs Zerg
+              .ui.items
+                =render_partial "builds/zerg/ling_bane_into_roach" 
+            .column
+              %h2 vs Protoss
+              .ui.items
+                =render_partial "builds/protoss/ravager_ling_bane"
+            .column
+              %h2 vs Terran
+              .ui.items
+                =render_partial "builds/terran/ultra_rush"
 .ui.vertical.stripe.segment
   .ui.one.column.grid.container
     .row
       .column
-        %h2 General tips
-        %ul
-          %li If first overlord doesn't see a natural - make units/spines/sac overlord immediately
-          %li If 3:30 scout sees no tech, make a spore in each mineral line, and scout for hidden tech on the map
-          %li Do not be afraid to pull drones
-          %li Do not be afraid to make a spine forest
-.ui.vertical.stripe.segment
-  .ui.three.column.grid.container
-    .row
-      .column
-        %h2 Scouting
-        (3:30 overlord scout)
-    .row
-      .column
-        %h2 vs Zerg
-        .ui.items
-          =render_zerg_build :one_base_ling_bane
-          =render_zerg_build :early_pool_expand
-      .column
-        %h2 vs Protoss
-        .ui.items
-          =render_protoss_build :archon_drop
-          =render_protoss_build :glaive_adept
-          =render_protoss_build :oracle
-      .column
-        %h2 vs Terran 
-        .ui.items
-          =render_terran_build "2_1_1"
-          =render_terran_build :widowmine_drop
-          =render_terran_build :hellion_banshee
+        %h2 Scouting (3:30 overlord scout)
+        .ui.three.column.grid.container
+          .row
+            .column
+              %h2 vs Zerg
+              .ui.items
+                =render_partial "scouting/zerg/one_base_ling_bane"
+                =render_partial "scouting/zerg/early_pool_expand"
+            .column
+              %h2 vs Protoss
+              .ui.items
+                =render_partial "scouting/protoss/archon_drop"
+                =render_partial "scouting/protoss/glaive_adept"
+                =render_partial "scouting/protoss/oracle"
+            .column
+              %h2 vs Terran 
+              .ui.items
+                =render_partial "scouting/terran/2_1_1"
+                =render_partial "scouting/terran/widowmine_drop"
+                =render_partial "scouting/terran/hellion_banshee"
