@@ -17,3 +17,18 @@ h2, .header {
 p, li {
   color: #DCDEDE;
 }
+
+ul {
+  margin-left: 1em;
+  padding-left: 1em;
+}
+
+ul ul {
+  margin-left: 0.5em;
+  padding-left: 0.5em;
+}
+
+ul ul ul {
+  margin-left: 0.65em;
+  padding-left: 0.63em;
+}
