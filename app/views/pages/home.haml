@@ -16,30 +16,11 @@
             .column
               %h2 vs Protoss
               .ui.items
-                =render_partial "openers/protoss/hatch_gas_pool"
+                =render_partial "openers/protoss/hatch_gas_pool_hatch"
             .column
               %h2 vs Terran
               .ui.items
-                =render_partial "openers/terran/hatch_gas_pool"
-.ui.vertical.stripe.segment
-  .ui.one.column.grid.container
-    .row
-      .column
-        %h2 Styles
-        .ui.three.column.grid.container
-          .row
-            .column
-              %h2 vs Zerg
-              .ui.items
-                =render_partial "builds/zerg/ling_bane_into_roach" 
-            .column
-              %h2 vs Protoss
-              .ui.items
-                =render_partial "builds/protoss/ravager_ling_bane"
-            .column
-              %h2 vs Terran
-              .ui.items
-                =render_partial "builds/terran/ling_bane_muta"
+                =render_partial "openers/terran/pool_hatch_gas_hatch"
 .ui.vertical.stripe.segment
   .ui.one.column.grid.container
     .row
@@ -57,12 +38,8 @@
               .ui.items
                 =render_partial "scouting/protoss/archon_drop"
                 =render_partial "scouting/protoss/glaive_adept"
-                =render_partial "scouting/protoss/oracle"
-                =render_partial "scouting/protoss/two_stargate_pheonix"
             .column
               %h2 vs Terran 
               .ui.items
                 =render_partial "scouting/terran/2_1_1"
-                =render_partial "scouting/terran/widowmine_drop"
-                =render_partial "scouting/terran/hellion_banshee"
-                =render_partial "scouting/terran/hellion_drop"
+                =render_partial "scouting/terran/hellion_cyclone"
