@@ -17,5 +17,13 @@ module Site
       "<link rel='stylesheet' type='text/css' href='#{file}'/>"
     end
 
+    def at_home?
+      request.path == "/"
+    end
+
+    def at_overlords?
+      request.path.include? "overlords"
+    end
+
   end
 end

@@ -2,6 +2,18 @@ hr {
   width: 33%;
 }
 
+.ui.secondary.pointing.menu {
+  background-color: #A46927;
+}
+
+.ui.secondary.pointing.menu .active.item {
+  border-color: #A46927;
+}
+
+.ui.secondary.pointing.menu .active.item:hover {
+  border-color: #A46927;
+}
+
 body {
   background-color:  #232021;
 }
