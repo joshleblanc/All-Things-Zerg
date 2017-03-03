@@ -1,0 +1,11 @@
+.ui.vertical.masthead.center.aligned.segment
+  .ui.text.container
+    %h1.ui.header All Things Zerg
+    %h2.ui.header Overlord Spots
+  .ui.vertical.stripe.segment
+    .ui.two.column.grid.container
+      .row
+        -@map_images.each do |map_image|
+          .column
+            %h2=map_image[:name]
+            %img{ src: map_image[:path], height: '400px' }
