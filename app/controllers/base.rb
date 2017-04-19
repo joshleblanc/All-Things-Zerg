@@ -1,5 +1,6 @@
 module Site
   module Routes
+    # Base configuration all routes inherit
     class Base < Sinatra::Application
       configure do
         set :views, 'app/views'

@@ -18,11 +18,15 @@ module Site
     end
 
     def at_home?
-      request.path == "/"
+      request.path == '/'
     end
 
     def at_overlords?
-      request.path.include? "overlords"
+      request.path.include? 'overlords'
+    end
+
+    def at_replays?
+      request.path.include? 'replays'
     end
 
   end
