@@ -6,7 +6,7 @@ module Site
     class Overlords < Base
 
       show = lambda do 
-        @map_images = Dir.glob('./public/img/maps/2017S3/*').map do |path|
+        @map_images = Dir.glob('./public/img/maps/2017S4/*').map do |path|
           {
             name: File.basename(path).tr('_', ' ').chomp('.jpg'),
             path: path[8..-1]
