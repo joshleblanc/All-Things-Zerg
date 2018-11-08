@@ -9,6 +9,5 @@ module Site
     Dir['./app/controllers/*.rb'].each { |file| require file }
 
     use Routes::Home
-    use Routes::Overlords
   end
 end
