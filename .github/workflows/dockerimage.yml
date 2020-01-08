@@ -15,4 +15,4 @@ jobs:
     - name: Login to registry
       run: docker login docker.pkg.github.com --username joshleblanc --password ${{ secrets.githubToken }}
     - name: Publish
-      run: docker push docker.pkg.github.com/joshleblanc/all-things-zerg/site:$(date +%s)
+      run: docker push docker.pkg.github.com/joshleblanc/all-things-zerg/site
