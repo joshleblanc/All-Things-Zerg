@@ -11,4 +11,4 @@ RUN bundle install
 
 ADD . .
 
-CMD ["bundle", "exec", "ruby", "main.rb"]
+CMD ["bundle", "exec", "puma"]
